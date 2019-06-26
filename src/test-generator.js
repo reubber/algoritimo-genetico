@@ -23,10 +23,10 @@ module.exports = new Promise((resolve, reject) => {
 
   test: (name, given, should, actual, expected) => {
   return `  assert({
-    VALORES GERDADOS: [${given.reduce(combine, '')}],
-    
-    ATUAL: ${name}(${given.reduce(combine, '')}),
-    ESPERADO: ${typeof expected === 'string' ? `'${expected}'` : expected}
+    valores: [${given.reduce(combine, '')}],
+    deve: '${should}',
+    atual: ${name}(${given.reduce(combine, '')}),
+    esperado: ${typeof expected === 'string' ? `'${expected}'` : expected}
   });
 
 `;

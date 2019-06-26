@@ -14,7 +14,7 @@ async function main() {
   const fileLoader = new FileLoader();
   const filePaths = Array.from(optimist.argv._);
 
-  console.log('Gerando testes para:', filePaths);
+  console.log('teste salvo como:', filePaths);
   console.log('');
   console.log('Executando...');
 
@@ -28,8 +28,8 @@ async function main() {
 
   console.log = log;
   console.log('');
-  console.log('Geração de teste concluida.');
-  console.log('Teste gerados:');
+  console.log('Concluido geração do teste.');
+  console.log('teste gerados:');
   console.log(results.map(a => a.path));
   console.log('');
 }
